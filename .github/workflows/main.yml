@@ -17,7 +17,7 @@ jobs:
       - name: SFTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: cp1.awardspace.net
+          server: f34-preview.awardspace.net
           username: 4431943_admin
           password: exampleexample13
           protocol: ftp
