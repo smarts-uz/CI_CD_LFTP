@@ -19,8 +19,8 @@ jobs:
         with:
           server: f34-preview.awardspace.net
           username: 4431943_admin
-          password: {( secrets.GITHUB )}
-          protocol: ftp
-          port: 21
+          password: ${( secrets.GITHUB )}
+          #protocol: ftp
+          #port: 21
           # adding file path version was 14, with error Error: FTPError: 550 .htaccess: Permission denied
           path: ./home/www/akaexcel.atwebpages.com/
