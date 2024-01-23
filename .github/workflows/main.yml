@@ -20,5 +20,5 @@ jobs:
           server: cp1.awardspace.net
           username: 4431943_admin
           password: exampleexample13
-          protocol: sftp
+          protocol: ftp
           port: 221
