@@ -15,10 +15,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
-          ftp-server: cp1.awardspace.net
-          ftp-username: 4431943_admin
-          ftp-password: exampleexample13
+          server: ftp.awardspace.net
+          username: 4431943_admin
+          password: exampleexample13
           protocol: ftp
           port: 21
