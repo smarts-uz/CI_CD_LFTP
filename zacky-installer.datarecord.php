@@ -1,0 +1,12 @@
+<?php /*
+
+This file contains internal information for the Zacky Installer.
+Do NOT change. Removing it might prevent you from using the installer 
+on this installation in the future.
+
+---
+QlpoOTFBWSZTWW8dh7sAAJ/fgEAQQId/8CHwDRC/79+xMAEZrAaptJiZT1PNTQ1TZPSh6mgBp6mnlBqnpGk9TaNI0wEYTJowBMBoRJ5TyIxDCepoBoGmIBCmW9N1C1SSGJJYr3EBGRBpFeYzYD5Yu02gAxXHUsqRNHouxwOPITHBIPSCh32MFYFZI5GyllCg+ewJyyMBQoN54JSQEoCkECINi43cHWde6hDlxmXlJYOeQhG2sOR7JIqYbZQoHBFmoCpk/U8TAtbEoNUT87qDun8fpdPsdfjjABVTgzLlj9ag9L6uOAIX+qU9mQhna2Mh+0Abos73znLhsDHnIrp7Izm9xMuNTlrqfHq4HAkhKQdxAPiHgb4YuzVujaxhQ13UA+1V8Kf3gkcxKyMQhuJTWrVAry4OWmlqGcqmS7EJXNsQGBVZNPemVhx5mlJ9KDCvp/i7kinChIN47D3Y
+
+...
+
+*/
