@@ -21,4 +21,4 @@ jobs:
           username: 4431943_admin
           password: exampleexample13
           protocol: ftp
-          port: 221
+          port: 21
