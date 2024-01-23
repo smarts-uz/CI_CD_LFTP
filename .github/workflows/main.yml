@@ -17,6 +17,6 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-          server: cp1.awardspace.net
-          username: 4431943_admin
-          password: ${{ secrets.GITHUB }}
+          ftp-server: cp1.awardspace.net
+          ftp-username: 4431943_admin
+          ftp-password: exampleexample13
