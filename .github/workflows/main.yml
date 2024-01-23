@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
           ftp-server: cp1.awardspace.net
           ftp-username: 4431943_admin
