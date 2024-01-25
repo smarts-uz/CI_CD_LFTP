@@ -23,4 +23,4 @@ jobs:
           #protocol: ftp   #port: 21
           # adding file path version was 14, with error Error: FTPError: 550 .htaccess: Permission denied
           # path: ./home/www/akaexcel.atwebpages.com/
-          # directory protection removed
+          # directory protection remove
