@@ -19,6 +19,7 @@ jobs:
       - name: Deploy Files
         uses: milanmk/actions-file-deployer@master
         with:
+          local-path: /
           remote-host: "f34-preview.awardspace.net"
           remote-port: 21
           remote-protocol: "ftp"
