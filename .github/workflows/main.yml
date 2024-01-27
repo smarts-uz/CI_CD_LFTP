@@ -18,7 +18,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: f34-preview.awardspace.net
-          username: 4431943 #4431943_admin
-          password: ${{ secrets.GITHUB }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
           server-dir: home/www/akaexcel.atwebpages.com/
 
