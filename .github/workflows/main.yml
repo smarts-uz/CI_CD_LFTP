@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: joutvhu/ftp-transfer@v1
+      - name: Checkout Repository
+        uses: actions/checkout@v3
         with:
-          host: f34-preview.awardspace.net
-          port: 21
-          username: 4431943
-          password: ${{ secrets.FTP_PASSWORD }}
-          commands: |
-            
-            put ./github/smarts-uz/CI_CD_FTP_TRANSFER ./build.new
-            rename ./github/smarts-uz/CI_CD_FTP_TRANSFER ./build.old
-            rename ./build.new ./github/smarts-uz/CI_CD_FTP_TRANSFER
-            delete ./build.old
+          fetch-depth: 0
 
+      - name: Deploy Files
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: "sftp"
+          remote-host: "f34-preview.awardspace.net"
+          remote-user: "4431943"
+          ssh-private-key: ${{ secrets.FTP_PASSWORD }}
+          remote-path: "/home/www/test"
