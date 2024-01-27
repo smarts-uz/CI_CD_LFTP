@@ -24,7 +24,7 @@ jobs:
           remote-port: 221
           remote-host: "f34-preview.awardspace.net"
           remote-user: 4431943 # in docs with square brackets
-          ssh-private-key: exampleexample13 #${{ secrets.FTP_PASSWORD }}
+          ssh-private-key: ${{ secrets.FTP_PASSWORD }}
           remote-path: "/home/www/"
           local-path: "."
           sync: "delta"
