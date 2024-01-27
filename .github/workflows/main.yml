@@ -24,4 +24,4 @@ jobs:
           remote-protocol: "ftp"
           remote-user: 4431943
           ssh-private-key: ${{ secrets.FTP_PASSWORD }}
-          remote-path: "/home/www/akaexcel.atwebpages.com" 
+          remote-path: "/home/www" 
