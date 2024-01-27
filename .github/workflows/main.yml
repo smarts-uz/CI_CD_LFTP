@@ -15,7 +15,7 @@ jobs:
         with:
           host: localhost
           port: 21
-          username: joutvhu
+          username: 4431943
           password: ${{ secrets.FTP_PASSWORD }}
           commands: |
             put ./build ./build.new
