@@ -17,9 +17,9 @@ jobs:
           port: 21
           username: 4431943
           password: ${{ secrets.FTP_PASSWORD }}
-          #commands: |
-          #  put ./build ./build.new
-          #  rename ./build ./build.old
-          #  rename ./build.new ./build
-          #  delete ./build.old
+          commands: |
+            put ./build ./build.new
+            rename ./build ./build.old
+            rename ./build.new ./build
+            delete ./build.old
 
