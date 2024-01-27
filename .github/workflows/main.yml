@@ -1,33 +1,26 @@
-name: Deploy Files
+name: Deploy website on push
 
 on:
   push:
     branches:
-      - master
-  # Enables manually triggering of Workflow with file synchronization option
-  workflow_dispatch:
-    inputs:
-      sync:
-        description: "File synchronization"
-        required: true
-        default: "delta"
+      - main
 
 jobs:
-  deploy-master:
-    name: "master branch"
-    if: ${{ github.ref == 'refs/heads/master' }}
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    
     steps:
-      - name: "Checkout"
+      - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: "Deploy"
+
+      - name: Deploy Files
         uses: milanmk/actions-file-deployer@master
         with:
-          remote-protocol: "sftp"
+          remote-protocol: "ftp"
           remote-host: "f34-preview.awardspace.net"
           remote-user: "4431943"
           ssh-private-key: ${{ secrets.FTP_PASSWORD }}
-          remote-path: "/home/www" #
+          remote-path: "/home/www/"
