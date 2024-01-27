@@ -23,7 +23,7 @@ jobs:
           remote-protocol: "ftp" #221 for SFTP
           #remote-port: 221
           remote-host: "f34-preview.awardspace.net"
-          remote-user: 4431943 # in docs with square brackets
+          remote-user: "4431943" # in docs with square brackets
           ssh-private-key: ${{ secrets.FTP_PASSWORD }}
           remote-path: "/home/www/"
           local-path: "."
