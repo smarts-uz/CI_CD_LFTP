@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Repository
+      - name: Get latest code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -20,8 +20,8 @@ jobs:
         uses: milanmk/actions-file-deployer@master
         with:
           remote-host: "f34-preview.awardspace.net"
-          remote-port: 221
-          remote-protocol: "sftp"
+          remote-port: 21
+          remote-protocol: "ftp"
           remote-user: "4431943"
-          ssh-private-key: ${{ secrets.FTP_PASSWORD }}
-          remote-path: "/home/www/test" #
+          ssh-private-key: exampleexample13 #${{ secrets.FTP_PASSWORD }}
+          remote-path: "/home/www/" 
