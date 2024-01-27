@@ -11,14 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get latest code
-        uses: actions/checkout@v3
-   
-      - name: Upload from public_html via FTP
-        uses: airvzxf/ftp-deployment-action@latest
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.username }}
-          password: ${{ secrets.password }}
-          #local_dir: "./akaexcel.atwebpages.com"
+      - uses: joutvhu/ftp-transfer@v1
+    with:
+      host: localhost
+      port: 21
+      username: joutvhu
+      password: ${{ secrets.FTP_PASSWORD }}
+      commands: |
+        put ./build ./build.new
+        rename ./build ./build.old
+        rename ./build.new ./build
+        delete ./build.old
 
