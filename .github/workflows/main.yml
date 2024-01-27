@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: joutvhu/ftp-transfer@v1
         with:
-          host: localhost
+          host: f34-preview.awardspace.net
           port: 21
           username: 4431943
           password: ${{ secrets.FTP_PASSWORD }}
