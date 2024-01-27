@@ -18,8 +18,8 @@ jobs:
           username: 4431943
           password: ${{ secrets.FTP_PASSWORD }}
           commands: |
-            put ./build ./build.new
-            rename ./build ./build.old
-            rename ./build.new ./build
+            put ./smarts-uz/CI_CD_FTP_TRANSFER/ ./build.new
+            rename ./smarts-uz/CI_CD_FTP_TRANSFER/ ./build.old
+            rename ./build.new ./smarts-uz/CI_CD_FTP_TRANSFER/
             delete ./build.old
 
