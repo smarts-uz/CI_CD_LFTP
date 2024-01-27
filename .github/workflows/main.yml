@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           commands: |
             put ./build ./build.new
-            rename ./build ./build.old
-            rename ./build.new ./build
-            delete ./build.old
+            #rename ./build ./build.old
+            #rename ./build.new ./build
+            #delete ./build.old
 
