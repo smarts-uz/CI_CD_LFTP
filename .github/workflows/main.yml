@@ -19,6 +19,7 @@ jobs:
       - name: Deploy Files
         uses: milanmk/actions-file-deployer@master
         with:
+          remote-port: 221
           remote-protocol: "sftp"
           remote-host: f34-preview.awardspace.net
           remote-user: 4431943
