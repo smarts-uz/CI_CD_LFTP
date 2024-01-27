@@ -21,9 +21,9 @@ jobs:
         uses: samuelmeuli/lftp-deploy-action@v2
         with:
           user: 4431943
-          password: ${{ secrets.SFTP_PASSWORD }}
+          password: ${{ secrets.PASSWORD }}
           host: "f34-preview.awardspace.net"
-          port: 22
+          port: 21
           local-dir: "."
           remote-dir: "/home/www/"
           exclude: ".git/**/*"
