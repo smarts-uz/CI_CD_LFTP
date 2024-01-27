@@ -19,7 +19,7 @@ jobs:
       - name: Deploy Files
         uses: milanmk/actions-file-deployer@master
         with:
-          local-path: /
+          local-path: /smarts-uz/CI_CD_FTP_TRANSFER
           remote-host: "f34-preview.awardspace.net"
           remote-port: 21
           remote-protocol: "ftp"
