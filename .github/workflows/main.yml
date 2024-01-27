@@ -18,7 +18,6 @@ jobs:
           username: 4431943
           password: ${{ secrets.FTP_PASSWORD }}
           commands: |
-            echo ls
             put ./CI_CD_FTP_TRANSFER/ ./build.new
             rename ./CI_CD_FTP_TRANSFER/ ./build.old
             rename ./build.new ./CI_CD_FTP_TRANSFER/
